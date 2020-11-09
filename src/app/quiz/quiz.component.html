@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <p> This javascript quiz includes 10 questions and there is no time limit</p>
+  <p> Good Luck!</p>
+    <input type="button" [value]="Start" (click)="loadQuiz()"/>
+    <hr>
+</div>
+<div *ngIf="flag">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" >
+            <div *ngFor="let qq of QuizInfo">
+                <h2>{{qq.questionId}}. {{qq.question}}</h2>
+                <div class="radio" *ngFor="let oo of qq.options">
+                    <label>
+                        <input type="radio" name={{qq.questionId}} ngModel [value]="oo.optionID">
+                        {{oo.msg}}
+                    </label> 
+                </div>
+                <div  *ngIf="submitted==true && userAnswer(f,qq.answer,qq.questionId)">
+                    <div class="col-xs-12">
+                      <p class="alert alert-success">
+                          <strong>Correct!</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div  *ngIf="submitted==true && !userAnswer(f,qq.answer,qq.questionId)">
+                    <div class="col-xs-12">
+                      <p class="alert alert-danger">
+                          <strong>Incorrect! the Correct Answer is option {{qq.answer}}</strong>
+                      </p>
+                    </div>
+                  </div>
+            </div>
+        <button class="btn btn-primary" type="submit">Submit</button> 
+        <div class="float-sm-right" *ngIf="submitted"><strong>{{correct.length}} /10 Correct</strong></div>
+        </form>
+</div>

@@ -1,0 +1,105 @@
+    {"quiz":[{
+      "questionId": 1,
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "options":[
+      {"optionID": 1,"msg":"<script>"},
+      {"optionID": 2,"msg":"<javascript>"},
+      {"optionID": 3,"msg":"<scripting>"},
+      {"optionID": 4,"msg":"<js>"}
+      ],
+      "answer":1
+    },
+    {
+        "questionId": 2,
+        "question": "Where is the correct place to insert a JavaScript?",
+        "options":[
+            {"optionID": 1,"msg":"The <body>"},
+            {"optionID": 2,"msg":"both the <head> and the <body>"},
+            {"optionID": 3,"msg":"The <head>"}
+            ],
+            "answer":2
+          },
+      {
+        "questionId": 3,
+        "question": "What is the correct syntax for referring to an external script called xxx.js?",
+        "options":[
+            {"optionID": 1,"msg":"<script src=xxx.js>"},
+            {"optionID": 2,"msg":"<script href=xxx.js"},
+            {"optionID": 3,"msg":"<script name=xxx.js"}
+            ],
+            "answer":1
+          },
+          {
+            "questionId": 4,
+            "question": "The external JavaScript file must contain the <script> tag",
+            "options":[
+                {"optionID": 1,"msg":"True"},
+                {"optionID": 2,"msg":"False"}
+                ],
+                "answer":2
+              },
+              {
+                "questionId": 5,
+                "question": "How do you write Hello world in an alert box?",
+                "options":[
+                    {"optionID": 1,"msg":"msgBox(Hello World)"},
+                    {"optionID": 2,"msg":"alert(Hello world)"},
+                    {"optionID": 3,"msg":"msg(Hello World)"},
+                    {"optionID": 4,"msg":"alertBox(Hello World)"}
+                    ],
+                    "answer":2
+                  },
+                  {
+                    "questionId": 6,
+                    "question": "How do you create a function in JavaScript?",
+                    "options":[
+                        {"optionID": 1,"msg":"function=myfunction()"},
+                        {"optionID": 2,"msg":"function:myFunction()"},
+                        {"optionID": 3,"msg":"function myFunction()"}
+                        ],
+                        "answer":3
+                      },
+                      {
+                        "questionId": 7,
+                        "question": "How do you call a function named 'myFunction'?",
+                        "options":[
+                            {"optionID": 1,"msg":"call function myFunction()"},
+                            {"optionID": 2,"msg":"call myFunction()"},
+                            {"optionID": 3,"msg":"myFunction()"}
+                            ],
+                            "answer":3
+                          },
+                          {
+                            "questionId": 8,
+                            "question": "How to write an IF statement in JavaScript?",
+                            "options":[
+                                {"optionID": 1,"msg":"if i=5 then"},
+                                {"optionID": 2,"msg":"if i==5 then"},
+                                {"optionID": 3,"msg":"if (i==5)"},
+                                {"optionID": 4,"msg":"if i=5"}
+                                ],
+                                "answer":3
+                              },
+                              {
+                                "questionId": 9,
+                                "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+                                "options":[
+                                    {"optionID": 1,"msg":"if(i<>5)"},
+                                    {"optionID": 2,"msg":"if(i!=5)"},
+                                    {"optionID": 3,"msg":"if i<>5"},
+                                    {"optionID": 4,"msg":"if i=!5 then"}
+                                    ],
+                                    "answer":2
+                                  },
+                                  {
+                                    "questionId": 10,
+                                    "question": "How does a WHILE loop start?",
+                                    "options":[
+                                        {"optionID": 1,"msg":"while(i<=10;i++"},
+                                        {"optionID": 2,"msg":"while i=1 to 10"},
+                                        {"optionID": 3,"msg":"while (i<=10)"}
+                                        ],
+                                        "answer":3
+                                      }
+              
+    ]}
